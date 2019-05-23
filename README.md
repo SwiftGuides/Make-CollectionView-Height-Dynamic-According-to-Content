@@ -14,3 +14,13 @@ Guide :-
 * Change the bottom equal constraint of the collection view to greater or equal.
 * Connect the height constraint to an outlet.
 * Every time you reload the data on the collection view do the following:
+
+
+Call this Code after Relaoding CollectinView or Tableview 
+
+```swift
+
+var height = self.otherProvidersCollectionView.collectionViewLayout.collectionViewContentSize.height          self.heightContraint.constant = height
+self.view.layoutIfNeeded()
+
+```
