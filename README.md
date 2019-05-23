@@ -20,7 +20,8 @@ Call this Code after Relaoding CollectinView or Tableview
 
 ```swift
 
-var height = self.otherProvidersCollectionView.collectionViewLayout.collectionViewContentSize.height          self.heightContraint.constant = height
+var height = self.otherProvidersCollectionView.collectionViewLayout.collectionViewContentSize.height          
+self.heightContraint.constant = height
 self.view.layoutIfNeeded()
 
 ```
